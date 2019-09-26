@@ -17,21 +17,16 @@ export class RecettesService {
     },
     {
       id: 'recette_2',
-      title: 'Pates aux crevettes',
       imageUrl: 'assets/icon/pate-crevettes.jpg',
-      ingredients: ['Pates', 'crevettes', 'champignon']
     },
     {
       id: 'recette_3',
-      title: 'tiep bou dieun',
       imageUrl: 'assets/icon/tiep-bou-dieun.jpg',
       ingredients: ['Riz', 'Carotte', 'Poisson', 'Chou', 'Huile', 'Persil']
     }
   ];
 
   // supprimer recette
-  suppressionRecette(recetteId:string) {
-    this.recettes = this.recettes.filter(recette =>{
       return recette.id !== recetteId;
     });
   }
